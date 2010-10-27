@@ -1,0 +1,13 @@
+Python ioctl constants and functions module
+
+Author: SpliFF
+License: Public Domain
+
+Mostly follows specifications in asm-generic/ioctl.h from linux 2.5.36
+
+Notable differences:
+* no architecture dependant stuff
+* size parameters are all passed as bytes, not types (ie pass 4, not int)
+
+!! WARNING EXPERIMENTAL SOFTWARE !!
+Make sure the values returned by these functions are properly tested before using fcntl on anything remotely valuable!
